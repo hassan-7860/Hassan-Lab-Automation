@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hassan Lab — AI Automation Specialist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">H</span>
+      <span class="logo-text">Hassan<span class="logo-accent">Lab</span></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#workflows" class="nav-link">Workflows</a>
+      <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn-primary header-cta">Let's Talk</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="index.html#about" class="mobile-nav-link">About</a>
+  <a href="index.html#workflows" class="mobile-nav-link">Workflows</a>
+  <a href="index.html#testimonials" class="mobile-nav-link">Testimonials</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+  <a href="contact.html" class="btn-primary" style="margin-top:1rem;">Let's Talk</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <canvas id="particleCanvas"></canvas>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <span class="badge-dot"></span>
+      Available for projects
+    </div>
+    <h1 class="hero-title reveal">
+      I Build <span class="text-gradient">AI Automations</span><br>
+      That Work<span class="blink-cursor">_</span>
+    </h1>
+    <p class="hero-sub reveal">
+      n8n workflows · AI Agents · Business Automation<br>
+      Helping founders save time, reduce costs, and scale smarter.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#workflows" class="btn-primary">See My Work</a>
+      <a href="contact.html" class="btn-ghost">Book a Call →</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-target="30">0</span><span class="stat-sym">+</span>
+        <span class="stat-label">Workflows Built</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="15">0</span><span class="stat-sym">+</span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="500">0</span><span class="stat-sym">h+</span>
+        <span class="stat-label">Hours Automated</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-tag reveal">About Me</div>
+        <h2 class="section-title reveal">
+          AI Automation<br><span class="text-gradient">Specialist</span><br>& Builder
+        </h2>
+        <p class="about-text reveal">
+          I'm Hassan — an AI automation specialist based in Jaipur, India. I help startups and small businesses build intelligent workflows using n8n, OpenAI, and custom AI agents that run 24/7 without human intervention.
+        </p>
+        <p class="about-text reveal">
+          I run <strong>Hassan Lab</strong> — a content brand and automation studio where I document my builds, share hidden AI tricks, and help founders understand how automation can transform their business operations.
+        </p>
+        <div class="skills-grid reveal">
+          <div class="skill-chip"><span class="chip-dot"></span>n8n Workflows</div>
+          <div class="skill-chip"><span class="chip-dot"></span>AI Agents</div>
+          <div class="skill-chip"><span class="chip-dot"></span>OpenAI / GPT-4o</div>
+          <div class="skill-chip"><span class="chip-dot"></span>RAG Systems</div>
+          <div class="skill-chip"><span class="chip-dot"></span>Lead Generation</div>
+          <div class="skill-chip"><span class="chip-dot"></span>Cold Email Automation</div>
+          <div class="skill-chip"><span class="chip-dot"></span>Google Sheets / Notion</div>
+          <div class="skill-chip"><span class="chip-dot"></span>Webhook Integrations</div>
+        </div>
+      </div>
+      <div class="about-right reveal">
+        <div class="about-card-wrap">
+          <div class="about-card">
+            <div class="about-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner">H</div>
+            </div>
+            <div class="about-card-info">
+              <h3>Hassan</h3>
+              <p>AI Automation Specialist</p>
+              <div class="about-card-tags">
+                <span>Hassan Lab</span>
+                <span>Billwaala</span>
+                <span>n8n Expert</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-tool-card">
+            <div class="tool-card-title">Tools I Work With</div>
+            <div class="tools-list">
+              <div class="tool-item"><span class="tool-icon">⚡</span>n8n</div>
+              <div class="tool-item"><span class="tool-icon">🤖</span>OpenAI</div>
+              <div class="tool-item"><span class="tool-icon">🗄️</span>PostgreSQL + pgvector</div>
+              <div class="tool-item"><span class="tool-icon">📊</span>Google Sheets</div>
+              <div class="tool-item"><span class="tool-icon">📝</span>Notion</div>
+              <div class="tool-item"><span class="tool-icon">📧</span>Gmail / SMTP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOWS -->
+<section class="section workflows-section" id="workflows">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag reveal">My Work</div>
+      <h2 class="section-title reveal">Featured <span class="text-gradient">Workflows</span></h2>
+      <p class="section-sub reveal">Real automations I've built — click any card to see details.</p>
+    </div>
+    <div class="workflows-grid" id="workflowsGrid">
+      <!-- Cards injected by JS -->
+    </div>
+    <div class="workflows-add reveal" id="addWorkflowBtn" style="display:none;">
+      <button class="btn-ghost" onclick="openWorkflowModal()">+ Add Workflow</button>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW MODAL -->
+<div class="modal-overlay" id="workflowModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeWorkflowModal()">✕</button>
+    <h3 class="modal-title">Add / Edit Workflow</h3>
+    <div class="modal-form">
+      <input type="hidden" id="editIndex">
+      <div class="form-group">
+        <label>Workflow Title</label>
+        <input type="text" id="wfTitle" placeholder="e.g. LinkedIn Content Planning Agent">
+      </div>
+      <div class="form-group">
+        <label>Category / Type</label>
+        <input type="text" id="wfCategory" placeholder="e.g. Content Automation">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea id="wfDesc" rows="3" placeholder="What does this workflow do? What problem does it solve?"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Tools Used (comma separated)</label>
+        <input type="text" id="wfTools" placeholder="n8n, OpenAI, Notion, Slack">
+      </div>
+      <div class="form-group">
+        <label>Emoji / Icon</label>
+        <input type="text" id="wfEmoji" placeholder="e.g. 🤖" maxlength="4">
+      </div>
+      <div class="form-group">
+        <label>Status</label>
+        <select id="wfStatus">
+          <option value="Live">Live</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Concept">Concept</option>
+        </select>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-ghost" onclick="closeWorkflowModal()">Cancel</button>
+        <button class="btn-primary" onclick="saveWorkflow()">Save Workflow</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag reveal">Social Proof</div>
+      <h2 class="section-title reveal">What Clients <span class="text-gradient">Say</span></h2>
+    </div>
+    <div class="testimonials-track-wrap">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <!-- injected by JS -->
+      </div>
+    </div>
+    <div class="testimonials-controls">
+      <button class="t-btn" id="tPrev" onclick="prevTestimonial()">←</button>
+      <div class="t-dots" id="tDots"></div>
+      <button class="t-btn" id="tNext" onclick="nextTestimonial()">→</button>
+    </div>
+    <div class="testimonials-add reveal" id="addTestimonialBtn" style="display:none;">
+      <button class="btn-ghost" onclick="openTestimonialModal()">+ Add Testimonial</button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL MODAL -->
+<div class="modal-overlay" id="testimonialModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeTestimonialModal()">✕</button>
+    <h3 class="modal-title">Add / Edit Testimonial</h3>
+    <div class="modal-form">
+      <input type="hidden" id="tEditIndex">
+      <div class="form-group">
+        <label>Client Name</label>
+        <input type="text" id="tName" placeholder="e.g. Rahul Sharma">
+      </div>
+      <div class="form-group">
+        <label>Role / Company</label>
+        <input type="text" id="tRole" placeholder="e.g. Founder, Acme Startup">
+      </div>
+      <div class="form-group">
+        <label>Testimonial Text</label>
+        <textarea id="tText" rows="4" placeholder="What did they say about working with you?"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Rating (1–5)</label>
+        <input type="number" id="tRating" min="1" max="5" value="5">
+      </div>
+      <div class="modal-actions">
+        <button class="btn-ghost" onclick="closeTestimonialModal()">Cancel</button>
+        <button class="btn-primary" onclick="saveTestimonial()">Save Testimonial</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="cta-glow"></div>
+      <h2>Ready to Automate<br><span class="text-gradient">Your Business?</span></h2>
+      <p>Let's talk about what's slowing you down. I'll build a workflow that fixes it.</p>
+      <a href="contact.html" class="btn-primary btn-large">Start a Project →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">H</span>
+          <span class="logo-text">Hassan<span class="logo-accent">Lab</span></span>
+        </a>
+        <p>AI Automation Specialist. Building intelligent workflows for startups and founders.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#workflows">Workflows</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <a href="mailto:hello@hassanlab.com">hello@hassanlab.com</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Hassan Lab. All rights reserved.</p>
+      <div class="footer-edit-toggle">
+        <button class="edit-toggle-btn" id="editToggle" onclick="toggleEditMode()">
+          <span id="editToggleText">🔒 Admin Mode</span>
+        </button>
+        <input type="password" id="adminPassword" placeholder="Enter password" style="display:none;">
+        <button id="adminSubmit" style="display:none;" onclick="checkPassword()" class="btn-ghost" style="font-size:12px;">Unlock</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
